@@ -1,0 +1,11 @@
+name = "websocket-hello-world"
+main = "src/index.js"
+compatibility_date = "2024-10-01"  # Update to a recent date; check Cloudflare docs for the latest recommended
+workers_dev = true  # Enables deployment to workers.dev subdomain
+
+# Optional: Add routes if binding to a custom domain
+# [triggers]
+# routes = ["example.com/*"]
+
+# Optional: For production tweaks, like usage model
+# usage_model = "bundled"  # Or "unbound" for longer-running Workers

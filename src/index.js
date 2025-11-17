@@ -13,10 +13,8 @@ export default {
     // Accept the connection
     server.accept();
 
-    // Send static message immediately on connection open
-    server.addEventListener('open', (event) => {
-      server.send('Hello World from Cloudflare Workers WebSocket!');
-    });
+    // Send static message immediately after accepting
+    server.send('Hello World from Cloudflare Workers WebSocket!');
 
     // Handle incoming messages (optional: echo back for interactivity)
     server.addEventListener('message', (event) => {
